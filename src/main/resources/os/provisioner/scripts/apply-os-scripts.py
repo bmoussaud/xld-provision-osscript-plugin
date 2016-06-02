@@ -1,8 +1,9 @@
 import com.xebialabs.xldeploy.provisioner.host.LazyHost as LazyHost
 
 provisioners = filter(lambda provisioner: provisioner.type == "os.provisioner.ExecutedScript", deployed.provisioners)
+print provisioners
 
-for p in puppet_provisioners:
+for p in provisioners:
     host = wrap(LazyHost())
     host.setHostTemplate(p.deployable.hostTemplate)
     host.setProvisionedBlueprint(deployedApplication)

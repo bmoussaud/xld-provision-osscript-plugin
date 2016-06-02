@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rules xmlns="http://www.xebialabs.com/xl-deploy/xl-rules">
 
-    <rule name="puppet.provisioner.Manifest.APPLY" scope="deployed">
+    <rule name="os.provisioner.Script.APPLY" scope="deployed">
         <conditions>
             <type>upm.Provisioned</type>
             <operation>CREATE</operation>
