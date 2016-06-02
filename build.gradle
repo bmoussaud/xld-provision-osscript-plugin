@@ -1,0 +1,11 @@
+apply plugin: "commercial-plugin"
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'document-generator'
+
+
+dependencies {
+    compile xl_deploy_provision_plugin
+
+    testCompile junit
+}

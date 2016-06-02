@@ -1,0 +1,1 @@
+${manifestDeployed.file.path}

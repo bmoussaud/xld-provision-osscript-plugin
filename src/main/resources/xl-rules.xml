@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<rules xmlns="http://www.xebialabs.com/xl-deploy/xl-rules">
+
+    <rule name="puppet.provisioner.Manifest.APPLY" scope="deployed">
+        <conditions>
+            <type>upm.Provisioned</type>
+            <operation>CREATE</operation>
+        </conditions>
+        <planning-script-path>os/provisioner/scripts/apply-os-scripts.py</planning-script-path>
+    </rule>
+
+ </rules>
